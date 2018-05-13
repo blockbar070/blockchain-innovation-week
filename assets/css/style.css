@@ -3591,16 +3591,6 @@ header nav.navbar.white #search-box .form-input :-ms-input-placeholder {
     }
 }
 
-#page-content.header-static {
-    margin-top: -80px !important;
-}
-
-@media screen and (max-width: 480px) {
-    #page-content.header-static {
-        margin-top: -60px !important;
-    }
-}
-
 #page-content.header-static #flexslider,
 #page-content.header-static #flexslider-nav {
     height: calc(100vh) !important;
