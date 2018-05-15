@@ -16,3 +16,12 @@
   background-size: cover;
   height: 200px;
 }
+
+#page-header .text:before {
+  transition: background 1s;
+  background-position: 80% 100px;
+}
+#page-header:hover .text:before {
+  background-position: 100% 0;
+  transition: background 0.8s;
+}
