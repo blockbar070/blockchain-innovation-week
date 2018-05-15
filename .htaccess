@@ -5,4 +5,4 @@ RewriteRule ^lineup/(.*)$ $1
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)/?$ program-item.html?name=$1 [L,QSA]
+RewriteRule ^([^/]+)/?$ program-item.php?name=$1 [L,QSA]
