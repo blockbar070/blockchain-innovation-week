@@ -18,12 +18,13 @@ var getTagsString = function(item) {
 }
 
 var renderProgramItem = function(item) {
+  console.log(item);
   $projectItems.append('\
     <div class="single-item one-item '+getTagsClasses(item)+'">\
         <div class="item">\
             <img src="'+item.featured_image_url+'" alt="">\
             <div class="content">\
-                <h3>'+item.title.rendered+'</h3>\
+                <h3><a href="./lineup/'+item.slug+'">'+item.title.rendered+'</a></h3>\
                 <span class="categories">'+getTagsString(item)+'</span>\
             </div>\
             <a href="pg_pil.html" class="link"></a>\
@@ -38,7 +39,6 @@ fetch('https://blockbar.nl/wp-json/wp/v2/posts')
     return response.json();
   })
   .then(function(posts) {
-    console.log(posts);
     R.map(renderProgramItem, posts)
   });
 
