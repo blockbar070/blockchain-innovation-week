@@ -8,3 +8,11 @@
   flex: 1;
   min-width: 300px;
 }
+.projects-items .single-item > .item {
+}
+
+.single-item .item-image {
+  background: #3344f1 center center no-repeat;
+  background-size: cover;
+  height: 200px;
+}

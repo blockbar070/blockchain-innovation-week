@@ -27,7 +27,7 @@ ProjectItemDetails = {
     $breadcrumb.html(item.title.rendered);
     $subtitle.text('About this session');
     $content.html(item.content.rendered);
-    if( ! $image )
+    if( ! item.featured_image_url )
       $image.hide();
     else
       $image.attr('src', item.featured_image_url);
