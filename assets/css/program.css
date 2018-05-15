@@ -11,17 +11,90 @@
 .projects-items .single-item > .item {
 }
 
+#page-content #projects .projects-items .single-item .item h3 a {
+  color: #333;
+}
+
+#page-content #projects .projects-items .single-item:hover .item h3 a {
+  color: #000;
+}
+
 .single-item .item-image {
   background: #3344f1 center center no-repeat;
   background-size: cover;
   height: 200px;
 }
 
-#page-header .text:before {
+/* Buy tickets banner on Home */
+.buy-tickets-banner {
+  margin: 30px 0 30px 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.buy-tickets-banner .text:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  background-image: url(../img/page-header.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  opacity: .6;
+}
+.buy-tickets-banner .text:before,
+#page-header.background-move-effect .text:before {
   transition: background 1s;
   background-position: 80% 100px;
 }
-#page-header:hover .text:before {
+.buy-tickets-banner:hover .text:before,
+#page-header.background-move-effect:hover .text:before {
   background-position: 100% 0;
   transition: background 0.8s;
+}
+.buy-tickets-banner .white {
+  color: #000 !important;
+}
+
+/* General styles */
+p, p b, p strong {
+  color: #000;
+}
+
+
+.quote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  width: 500px;
+  margin: 50px 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+  border-left: none !important;
+}
+.quote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+.quote cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+.quote cite:before {
+content: "\2014 \2009";
 }

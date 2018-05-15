@@ -4936,7 +4936,7 @@ aside.left form .form-input span.form-button {
 #page-header {
     margin-left: -50px;
     margin-right: -50px;
-    margin-top: 80px;
+    /*margin-top: 80px;*/
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -40,7 +40,9 @@
                                         <div class="le-content">
                                             The content of this page.
                                         </div>
-                                        <a href="/program" class="btn-alt small active margin-null" target="_blank">Back to program</a>
+                                        <p>
+                                            <a href="/program" class="btn-alt small active margin-null" target="_blank">Back to program</a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>

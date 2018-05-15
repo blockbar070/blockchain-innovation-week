@@ -20,7 +20,7 @@
                             <div data-responsive="parent-height" data-responsive-id="about" class="text">
                                 <h2 class="margin-bottom-null left">About The Event</h2>
                                 <div class="padding-onlytop-sm">
-                                    <p class="margin-bottom grey">
+                                    <p class="margin-bottom">
                                       The first edition of Blockchain Innovation Week will take place on the <b>24th and 25th of May 2018</b>, The Hague’s first two-day event where blockchain developers share the <b>newest insights</b> in blockchain technologies.
                                     </p>
                                     <a href="about.html" class="btn-pro">Read More</a>
@@ -41,7 +41,7 @@
 
                 <!-- BEGIN Divider -->
 
-                <div id="page-header" class="secondary-background">
+                <div id="page-header" class="secondary-background background-move-effect">
                     <div class="container">
                         <div class="row no-margin">
                             <a href="https://events.guts.tickets/events/104" target="_blank" class="text" style="display: block;">
