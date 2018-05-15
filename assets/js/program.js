@@ -1,4 +1,5 @@
 var $projectItems = $('#projects .projects-items');
+var $projectFilters= $('#projects .filters');
 
 var getTagsClasses = function(item) {
   let tags = '';
@@ -31,6 +32,7 @@ var renderProgramItem = function(item) {
   ');
 }
 
+// Get posts
 fetch('https://blockbar.nl/wp-json/wp/v2/posts')
   .then(function(response) {
     return response.json();
@@ -38,6 +40,25 @@ fetch('https://blockbar.nl/wp-json/wp/v2/posts')
   .then(function(posts) {
     console.log(posts);
     R.map(renderProgramItem, posts)
-    $projectItems.isotope('layout');
   });
 
+/*
+ * Filters
+ */
+var filterClicked = function(e) {
+  // Get filter name
+  filter = $(e.target).data('filter');
+  // Hide all items
+  $projectItems.find('.single-item').hide();
+  // If filter is *, show all items
+  if(filter == '*') {
+    $projectItems.find('.single-item').fadeIn();
+    return;
+  }
+  // Show only items with this filter
+  $projectItems.find('.single-item').each(function() {
+    if( $(this).hasClass('tag-'+filter) ) $(this).fadeIn()
+  });
+}
+
+$projectFilters.find('li').on('click', filterClicked);
