@@ -18,6 +18,7 @@ var getTagsString = function(item) {
 }
 
 var renderProgramItem = function(item) {
+  if(item.categories[0] != 6) return; 
   $projectItems.append('\
     <div class="single-item one-item '+getTagsClasses(item)+'">\
         <div class="item">\
