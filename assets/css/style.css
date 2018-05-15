@@ -4985,6 +4985,7 @@ aside.left form .form-input span.form-button {
 
 #page-header ul.breadcrumb {
     padding: 0;
+    position: relative;
     margin-bottom: 0;
     list-style: none;
     background-color: transparent;
