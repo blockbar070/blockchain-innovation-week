@@ -1,4 +1,4 @@
-<?php echo 'tmpl/head.php'; ?>
+<?php require 'tmpl/head.php'; ?>
 
     <!--  Main Wrap  -->
     <div id="main-wrap">
@@ -9,7 +9,7 @@
                 <div class="container">
                     <div class="row no-margin">
                         <div class="text">
-                            <h1 class="white">Our Programme</h1>
+                            <h1 class="white">Programme</h1>
                         </div>
                     </div>
                 </div>
@@ -17,7 +17,17 @@
             <!--  END Page Header  -->
             <div id="home-wrap" class="content-section fullpage-wrap">
 
-                <div class="container">
+                <?php include 'tmpl/program.php'; ?>
+
+                <p align="center">
+                    <i>The following time are not final. Program will be updated in the following days.</i>
+                </p>
+
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGHgnyA0Ij9oT6LgB0K2DSk7bgaKaYCkBmYyeqL4Lm5kZTR0bLCv5_dmF6tmm8jTLhRNZF3qLneRJ6/pubhtml?gid=1446522134&amp;single=true&amp;widget=true&amp;headers=false" style="display: block; margin: 0 auto; border: 0; width: 1120px; max-width: 100%; height: 500px;"></iframe>
+
+                <?php include 'tmpl/buy-tickets.php'; ?>
+
+                <div class="container" hidden>
                     <!-- Title -->
                     <div class="row no-margin padding-lg">
                         <ul class="nav nav-tabs" role="tablist">
@@ -36,7 +46,7 @@
                 <!--  Nav Tabs  -->
                 <!-- Tab panes -->
 
-                <div class="container">
+                <div class="container" hidden>
                     <div class="tab-content">
 
                         <div role="tabpanel" class="tab-pane active" id="tab-one">
@@ -55,23 +65,23 @@
                                         <li>
                                             <div class="content">
                                                 <p>
-                                                    PII is focused on Blockchain For Impact and is collaborating with The Spindle. Together with The Spindle and Dorcas they will present EXO.foundation.
+                                                    Workshop Solidity - Ethereum development
                                                 </p>
                                             </div>
                                             <div class="timeline-badge"></div>
                                             <div class="title">
-                                                <h3>17:00</h3>
-                                                <span>Main Room</span>
+                                                <h3>16:30 - 18:30</h3>
+                                                <span>Satoshi</span>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="content">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati modi, ab dolorem soluta quos error. Dolorum, tempora soluta suscipit, vero sunt asperiores ut tempore minima, a accusamus eius vitae mollitia.</p>
+                                                <p>Scaling using Komodo's asset chains</p>
                                             </div>
                                             <div class="timeline-badge"></div>
                                             <div class="title">
-                                                <h3>2000</h3>
-                                                <span>Inaugurated our headquarter</span>
+                                                <h3>16:45 - 17:15</h3>
+                                                <span>Community Space</span>
                                             </div>
                                         </li>
                                         <li>
@@ -160,7 +170,7 @@
                     </div>
 
                 </div>
-                <div class="light-background">
+                <div class="light-background" hidden>
                     <div class="container">
                         <!-- CTA -->
                         <div class="row no-margin">
@@ -184,4 +194,4 @@
     </div>
     <!--  Main Wrap  -->
 
-<?php echo 'tmpl/foot.php'; ?>
+<?php require 'tmpl/foot.php'; ?>
