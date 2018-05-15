@@ -25,14 +25,14 @@
                 <div class="container">
                     <div class="row no-margin">
                         <!-- Project Content -->
-                        <div class="col-md-8 padding-leftright-null">
+                        <div class="col-md-4 padding-leftright-null">
                             <div class="text padding-onlytop-lg padding-onlybottom-lg padding-md-bottom-null">
-                                <img src="assets/img/project.jpg" alt="" class="img-responsive project-image">
+                                <img src="assets/img/project.jpg" alt="" class="img-responsive project-image" style="display:none;">
                             </div>
                         </div>
                         <!-- END Project Content -->
                         <!-- Project Sidebar -->
-                        <div class="col-md-4 padding-leftright-null">
+                        <div class="col-md-8 padding-leftright-null">
                             <div class="row no-margin">
                                 <div class="col-md-12 padding-leftright-null">
                                     <div class="text padding-onlytop-lg padding-md-top padding-md-bottom-lg">

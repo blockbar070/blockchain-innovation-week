@@ -30,7 +30,7 @@ ProjectItemDetails = {
     if( ! item.featured_image_url )
       $image.hide();
     else
-      $image.attr('src', item.featured_image_url);
+      $image.attr('src', item.featured_image_url).show();
   },
 
   init: function() {
