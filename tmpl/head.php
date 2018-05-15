@@ -1,3 +1,10 @@
+<?php
+$is_home = strpos($_SERVER['SCRIPT_FILENAME'], '/index') > -1;
+$is_about = strpos($_SERVER['SCRIPT_FILENAME'], '/about') > -1;
+$is_program_page = strpos($_SERVER['SCRIPT_FILENAME'], '/program-item') > -1;
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -89,13 +96,28 @@
                 <div class="menu-holder">
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="/"
+                                class="<?php echo $is_home ? 'active-item' : ''; ?>">
+                                Home
+                            </a>
                         </li>
                         <li>
-                            <a href="programme.html" class="active-item">Programme</a>
+                            <a href="/programme.php"
+                                class="<?php echo $is_program_page ? 'active-item' : ''; ?>">
+                                Programme
+                            </a>
                         </li>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="/tickets.php"
+                                class="<?php echo $is_tickets_page ? 'active-item' : ''; ?>">
+                                Tickets
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/about.php"
+                                class="<?php echo $is_about_page ? 'active-item' : ''; ?>">
+                                About
+                            </a>
                         </li>
                     </ul>
                 </div>
