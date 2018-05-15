@@ -1,0 +1,10 @@
+.projects-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.projects-items .single-item {
+  flex: 1;
+  min-width: 300px;
+}

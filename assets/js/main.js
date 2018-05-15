@@ -150,7 +150,10 @@ var $ = jQuery.noConflict();
     /* =  Isotope
     /*-------------------------------------------------*/
     try {
-        
+        /*
+
+        DISABLE ISOTOPE FOR PROGRAM ITEMS
+
         var $mainContainerSimple=$('section[data-isotope="load-simple"] .projects-items');
         $mainContainerSimple.imagesLoaded( function(){
 
@@ -169,7 +172,7 @@ var $ = jQuery.noConflict();
                 });
             });
             
-        });
+        });*/
     
     } catch(err) {
 

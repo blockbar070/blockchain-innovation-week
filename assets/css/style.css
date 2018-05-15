@@ -4127,7 +4127,7 @@ header nav.navbar.white #search-box .form-input :-ms-input-placeholder {
     color: #757575;
 }
 
-#page-content #projects .projects-items .single-item .item a.link,
+/*#page-content #projects .projects-items .single-item .item a.link,*/
 #page-content #projects .masonry-items .single-item .item a.link,
 #page-content #projects-filters .projects-items .single-item .item a.link,
 #page-content #projects-filters .masonry-items .single-item .item a.link,
