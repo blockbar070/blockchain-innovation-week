@@ -128,12 +128,12 @@
                 <div class="container">
                     <div class="row no-margin">
                         <div class="text">
-                            <h1 class="white">Brueli Template.</h1>
+                            <h1 class="white">Page title</h1>
                             <ul class="breadcrumb white">
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
-                                <li>Brueli Template</li>
+                                <li>Breadcrumb</li>
                             </ul>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                                         <div class="le-content">
                                             The content of this page.
                                         </div>
-                                        <a href="https://www.behance.net/gallery/33130341/Brueli-Minimal-HTML-Template" class="btn-alt small active margin-null" target="_blank">View on behance</a>
+                                        <a href="/program" class="btn-alt small active margin-null" target="_blank">Back to program</a>
                                     </div>
                                 </div>
                             </div>
