@@ -20,7 +20,7 @@ var getTagsString = function(item) {
 var renderProgramItem = function(item) {
   if(item.categories[0] != 6) return; 
   $projectItems.append('\
-    <div class="single-item one-item '+getTagsClasses(item)+'">\
+    <div class="single-item one-item '+getTagsClasses(item)+'" onClick="javascript:document.location=\'./lineup/'+item.slug+'\'">\
         <div class="item">\
             <div class="item-image" style="background-image: url('+item.featured_image_url+');" alt=""></div>\
             <div class="content">\
@@ -50,6 +50,9 @@ var filterClicked = function(e) {
   filter = $(e.target).data('filter');
   // Hide all items
   $projectItems.find('.single-item').hide();
+  // Add active style
+  $projectFilters.find('li').removeClass('is-checked');
+  $(e.target).closest('li').addClass('is-checked');
   // If filter is *, show all items
   if(filter == '*') {
     $projectItems.find('.single-item').fadeIn();

@@ -7,6 +7,7 @@
 .projects-items .single-item {
   flex: 1;
   min-width: 300px;
+  cursor: pointer;
 }
 .projects-items .single-item > .item {
 }
@@ -20,9 +21,9 @@
 }
 
 .single-item .item-image {
-  background: #3344f1 center center no-repeat;
-  background-size: cover;
-  height: 200px;
+  background: transparent center top no-repeat;
+  background-size: contain;
+  height: 300px;
 }
 
 /* Buy tickets banner on Home */

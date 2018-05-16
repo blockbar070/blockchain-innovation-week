@@ -23,7 +23,7 @@
                                     <p class="margin-bottom">
                                       The first edition of Blockchain Innovation Week will take place on the <b>24th and 25th of May 2018</b>, The Hague’s first two-day event where blockchain developers share the <b>newest insights</b> in blockchain technologies.
                                     </p>
-                                    <a href="about.html" class="btn-pro">Read More</a>
+                                    <a href="/biw/about.php" class="btn-pro">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@
                 <div id="page-header" class="secondary-background background-move-effect">
                     <div class="container">
                         <div class="row no-margin">
-                            <a href="/tickets.php" target="_blank" class="text" style="display: block;">
+                            <a href="/biw/tickets.php" target="_blank" class="text" style="display: block;">
                                 <h1 class="white">Get your tickets</h1>
                                 <div class="btn-pro white">Buy a day ticket or passe-partout.</div>
                             </a>

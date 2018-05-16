@@ -1,7 +1,8 @@
 <?php
 $is_home = strpos($_SERVER['SCRIPT_FILENAME'], '/index') > -1;
-$is_about = strpos($_SERVER['SCRIPT_FILENAME'], '/about') > -1;
-$is_program_page = strpos($_SERVER['SCRIPT_FILENAME'], '/program-item') > -1;
+$is_about_page = strpos($_SERVER['SCRIPT_FILENAME'], '/about') > -1;
+$is_tickets_page = strpos($_SERVER['SCRIPT_FILENAME'], '/tickets') > -1;
+$is_program_page = strpos($_SERVER['SCRIPT_FILENAME'], '/program-item') > -1 || strpos($_SERVER['SCRIPT_FILENAME'], '/programme') > -1;
 ?>
 
 
@@ -24,7 +25,7 @@ $is_program_page = strpos($_SERVER['SCRIPT_FILENAME'], '/program-item') > -1;
 
     <!-- Custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/program.css">
+    <link rel="stylesheet" href="assets/css/program.css?2">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -67,7 +68,7 @@ $is_program_page = strpos($_SERVER['SCRIPT_FILENAME'], '/program-item') > -1;
         <div class="top-nav">
             <!--  Header Logo  -->
             <div id="logo">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <img src="assets/img/logo.png" class="normal" alt="logo">
                     <img src="assets/img/logo@2x.png" class="retina" alt="logo">
                 </a>
@@ -88,25 +89,25 @@ $is_program_page = strpos($_SERVER['SCRIPT_FILENAME'], '/program-item') > -1;
                 <div class="menu-holder">
                     <ul>
                         <li>
-                            <a href="/"
+                            <a href="/biw/"
                                 class="<?php echo $is_home ? 'active-item' : ''; ?>">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="/programme.php"
+                            <a href="/biw/programme.php"
                                 class="<?php echo $is_program_page ? 'active-item' : ''; ?>">
                                 Programme
                             </a>
                         </li>
                         <li>
-                            <a href="/tickets.php"
+                            <a href="/biw/tickets.php"
                                 class="<?php echo $is_tickets_page ? 'active-item' : ''; ?>">
                                 Tickets
                             </a>
                         </li>
                         <li>
-                            <a href="/about.php"
+                            <a href="/biw/about.php"
                                 class="<?php echo $is_about_page ? 'active-item' : ''; ?>">
                                 About
                             </a>
