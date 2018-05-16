@@ -1,7 +1,9 @@
 <?php require 'tmpl/head.php'; ?>
 
     <!--  Main Wrap  -->
-    <img src="assets/img/banner.png" style="width: 100%;" />
+    <div class="header-wrap">
+        <!-- <img src="assets/img/banner.png" style="width: 100%;" /> -->
+    </div>
     <div id="main-wrap">
         <!--  Page Content  -->
         <div id="page-content" class="header-static">
@@ -15,7 +17,7 @@
                 <!-- Abous us -->
                 <div class="container">
                     <!-- Section Image -->
-                    <div class="row no-margin padding-onlytop-lg">
+                    <div class="row no-margin">
                         <div class="col-md-6 padding-leftright-null">
                             <div data-responsive="parent-height" data-responsive-id="about" class="text">
                                 <h2 class="margin-bottom-null left">About The Event</h2>
@@ -29,8 +31,8 @@
                         </div>
 
                         <div class="col-md-6 padding-leftright-null">
-                            <div data-responsive="child-height" data-responsive-id="about" class="section-image height-auto-sm">
-                                <picture class="section right">
+                            <div class="section-image">
+                                <picture class="">
                                     <img src="https://c1.staticflickr.com/1/852/26785490577_e4ecd65dcc_c.jpg" class="img-responsive" alt="">
                                 </picture>
                             </div>

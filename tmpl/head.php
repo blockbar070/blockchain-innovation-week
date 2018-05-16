@@ -25,7 +25,8 @@ $is_program_page = strpos($_SERVER['SCRIPT_FILENAME'], '/program-item') > -1 || 
 
     <!-- Custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/program.css?2">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/program.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
