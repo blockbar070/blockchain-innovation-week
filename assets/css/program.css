@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'SourceSansPro Bold';
+  src: url('fonts/SourceSansPro-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceSansPro Black';
+  src: url('fonts/SourceSansPro-Black.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .projects-items {
   display: flex;
   justify-content: space-between;
@@ -24,4 +37,61 @@
   background: transparent center top no-repeat;
   background-size: contain;
   height: 300px;
+}
+
+.session {
+  /*font-family: Courier New, sans-serif;*/
+  font-family: 'SourceSansPro Black', sans-serif;
+  text-transform: uppercase;
+  background: #e9eef4;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 280px;
+  margin: 25px;
+  position: relative;
+  cursor:pointer;
+}
+.session-title {
+  font-size: 24px;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  width: 200px;
+  line-height: 32px;
+  color: #3345f1;
+  font-weight: bold;
+}
+.session-date {
+  margin-top:10px;
+  font-size: 16px;
+  color: #000;
+  line-height: 20px;
+}
+.session-author {
+  font-size: 16px;
+  line-height: 20px;
+}
+.session-corner {
+  opacity:0;
+  width: 130px;
+  position: absolute;
+  transition: opacity 0.5s;
+}
+.session:hover .session-corner {
+  opacity:1;
+  transition: opacity 0.2s;
+}
+
+/* Session that is a workshop */
+.session.tag-workshop {
+  background-color: #3345f1;
+}
+.session.tag-workshop .session-title,
+.session.tag-workshop .session-author {
+  color: #fff;
+}
+.session.tag-workshop .session-date {
+  color: #000;
 }

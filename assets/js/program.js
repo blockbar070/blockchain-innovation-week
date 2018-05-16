@@ -18,17 +18,34 @@ var getTagsString = function(item) {
 }
 
 var renderProgramItem = function(item) {
-  if(item.categories[0] != 6) return; 
+  if(item.categories[0] != 6) return;
+  let isThursday = R.filter(function(tag) { return tag.name == 'thursday' }, item.tags_full)
+  let isWorkshop = R.filter(function(tag) { return tag.name == 'workshop' }, item.tags_full);
+  let dateString = isThursday.length == 1 ? '24 May' : '25 May'
+
+  // PLACE CORNER IMAGE RANDOMLY
+  let cornerImg = isWorkshop.length == 1 ? 'corner-blue.png' : 'session-corner.png';
+
+  // Generate a random 1 _or_ 0:
+  let randomBit = Math.floor(Math.random()*(1+1)) == 1;
+  let cornerPositionY = randomBit ? 'top' : 'bottom';
+  let cornerPositionX = randomBit ? 'left' : 'right';
+  let cornerExtraCSS = randomBit ? '' : 'transform: rotate(180deg);'
+
+  // For workshops, the corner is alway placed:
+  cornerPositionY = isWorkshop.length == 1 ? 'top' : cornerPositionY;
+  cornerPositionX = isWorkshop.length == 1 ? 'right' : cornerPositionX;
+  cornerExtraCSS = isWorkshop.length == 1 ? '' : cornerExtraCSS;
+
+  cornerExtraCSS += Math.floor(Math.random()*(7+1)) == 1 ? 'opacity: 1;' : ''
   $projectItems.append('\
-    <div class="single-item one-item '+getTagsClasses(item)+'" onClick="javascript:document.location=\'./lineup/'+item.slug+'\'">\
-        <div class="item">\
-            <div class="item-image" style="background-image: url('+item.featured_image_url+');" alt=""></div>\
-            <div class="content">\
-                <h3><a href="./lineup/'+item.slug+'">'+item.title.rendered+'</a></h3>\
-                <span class="categories">'+getTagsString(item)+'</span>\
-            </div>\
-            <a href="pg_pil.html" class="link"></a>\
-        </div>\
+    <div class="session '+getTagsClasses(item)+'" onClick="javascript:document.location=\'./lineup/'+item.slug+'\'">\
+      <img class="session-corner" src="assets/img/'+cornerImg+'" style="'+cornerPositionY+': 0; '+cornerPositionX+': 0; '+cornerExtraCSS+'" />\
+      <div class="session-title">\
+        '+item.title.rendered+'\
+        <div class="session-date">'+dateString+'</div>\
+        <div class="session-author">'+item.meta_box['session-author']+'</div>\
+      </div>\
     </div>\
   ');
 }
@@ -49,17 +66,17 @@ var filterClicked = function(e) {
   // Get filter name
   filter = $(e.target).data('filter');
   // Hide all items
-  $projectItems.find('.single-item').hide();
+  $projectItems.find('.session').hide();
   // Add active style
   $projectFilters.find('li').removeClass('is-checked');
   $(e.target).closest('li').addClass('is-checked');
   // If filter is *, show all items
   if(filter == '*') {
-    $projectItems.find('.single-item').fadeIn();
+    $projectItems.find('.session').fadeIn();
     return;
   }
   // Show only items with this filter
-  $projectItems.find('.single-item').each(function() {
+  $projectItems.find('.session').each(function() {
     if( $(this).hasClass('tag-'+filter) ) $(this).fadeIn()
   });
 }
