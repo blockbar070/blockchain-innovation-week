@@ -20,10 +20,10 @@
                 <br />
 
                 <p align="center">
-                    <i>The following time are not final. Program will be updated in the following days.</i>
+                    <i>The following times are not final. Program will be updated in the following days.</i>
                 </p>
 
-                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGHgnyA0Ij9oT6LgB0K2DSk7bgaKaYCkBmYyeqL4Lm5kZTR0bLCv5_dmF6tmm8jTLhRNZF3qLneRJ6/pubhtml?gid=1446522134&amp;single=true&amp;widget=true&amp;headers=false" style="display: block; margin: 0 auto; border: 0; width: 1120px; max-width: 90%; height: 500px;"></iframe>
+                <div id="program-schedule"></div>
 
                 <?php include 'tmpl/buy-tickets.php'; ?>
 

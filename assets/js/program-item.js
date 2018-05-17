@@ -27,7 +27,7 @@ ProjectItemDetails = {
     $breadcrumb.html(item.title.rendered);
     $subtitle.text('Session info');
     let theContent = item.content.rendered.split('<!--more-->')
-    theContent = theContent[1]
+    theContent = theContent[1] == undefined ? theContent : theContent[1]
     $content.html(theContent);
     if( ! item.featured_image_url )
       $image.hide();

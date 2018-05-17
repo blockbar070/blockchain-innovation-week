@@ -12,7 +12,7 @@
                             <h1 class="white">Tickets</h1>
                             <ul class="breadcrumb white">
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li>Tickets</li>
                             </ul>

@@ -99,8 +99,9 @@
 
     <!-- Our own scripts -->
     <script src="//cdn.jsdelivr.net/npm/ramda@0.25/dist/ramda.min.js"></script>
-    <script src="assets/js/program.js"></script>
-    <script src="assets/js/program-item.js"></script>
+    <script src="assets/js/program-overview.js?1"></script>
+    <script src="assets/js/program-item.js?1"></script>
+    <script src="assets/js/program-schedule.js?1"></script>
 
     <!-- All js library -->
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>

@@ -1,0 +1,88 @@
+#program-schedule {
+  max-width: 95%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 5px;
+  margin: 0 auto;
+}
+.day-title {
+  margin: 15px 0;
+  text-align: center;
+  position: sticky;
+  left:0;
+}
+.day-title.friday {
+  margin-top: 30px;
+}
+.day-thursday, .day-friday {
+  width: 1440px;
+  margin: 0 auto;
+}
+.program-schedule-hours {
+  position: relative;
+  margin: 2px 0;
+}
+.program-schedule-hour {
+  display: inline-block;
+  font-size: 12px;
+}
+.program-schedule-hour.is-highlighted {
+  font-weight: bold;
+  color: #3345f1;
+}
+.program-schedule-area {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  font-weight: bold;
+  color: #3345f1;
+  text-align: center;
+  width: 100px;
+}
+
+/* Program schedule session */
+.program-schedule-session {
+  position: absolute;
+  border-left: solid 1px #ccc;
+  top:2px;
+  bottom:2px;
+  font-family: 'SourceSansPro Black', sans-serif;
+  text-transform: uppercase;
+  background: #e9eef4;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 5px 0;
+  cursor:pointer;
+  overflow:hidden;
+  transition: opacity 2s;
+}
+.program-schedule-session:hover {
+  opacity: 0.95;
+  transition: opacity 0.5s;
+  border-bottom: solid 2px #666;
+  /*margin-top:6px;*/
+  /*margin-left:1px;*/
+}
+.program-schedule-session-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  left: 15px;
+  bottom: 15px;
+  line-height: 14px;
+  color: #3345f1;
+  font-weight: bold;
+}
+.program-schedule-session-author {
+  margin-top:3px;
+  font-size: 0.67em;
+  line-height: 1.25em;
+}
+
+/* Session that is a workshop */
+.program-schedule-session.tag-workshop {
+  background-color: #3345f1;
+}
+.program-schedule-session.tag-workshop .program-schedule-session-title,
+.program-schedule-session.tag-workshop .program-schedule-session-author {
+  color: #fff;
+}

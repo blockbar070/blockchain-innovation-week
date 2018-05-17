@@ -40,7 +40,7 @@
                                         <div class="le-content">
                                             The content of this page.
                                         </div>
-                                        <p>
+                                        <p hidden>
                                             <a href="/biw/programme.php" class="btn-alt small active margin-null">See full program</a>
                                         </p>
                                     </div>
@@ -51,6 +51,7 @@
                     </div>
                 </div>
                 <!-- Services Section -->
+                <?php include 'tmpl/program.php'; ?>
             </div>
         </div>
         <!--  END Page Content -->

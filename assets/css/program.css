@@ -40,7 +40,6 @@
 }
 
 .session {
-  /*font-family: Courier New, sans-serif;*/
   font-family: 'SourceSansPro Black', sans-serif;
   text-transform: uppercase;
   background: #e9eef4;
@@ -65,13 +64,13 @@
 }
 .session-date {
   margin-top:10px;
-  font-size: 16px;
+  font-size: 0.67em;;
   color: #000;
-  line-height: 20px;
+  line-height: 1.25em;;
 }
 .session-author {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 0.67em;;
+  line-height: 1.25em;;
 }
 .session-corner {
   opacity:0;

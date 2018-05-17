@@ -95,7 +95,7 @@ content: "\2014 \2009";
 
 /* Buy tickets banner has to be visible on mobile phones */
 @media screen and (max-width: 425px) {
-  #page-header {
+  #page-header.background-move-effect {
     margin-left: -10px;
     margin-right: -10px;
   }
