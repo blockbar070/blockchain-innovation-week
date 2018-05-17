@@ -72,8 +72,6 @@ ProjectItemSchedule = {
     isWorkshop = isWorkshop.length == 1
     let day = isThursday ? 'thursday' : 'friday';
 
-    console.log('voor', item.title.rendered);
-
     // Do not add session to schedule if no area is set
     if( item.meta_box['session-area'] == '' )
       return;
@@ -81,8 +79,6 @@ ProjectItemSchedule = {
     // Do not add session to schedule if no time is set
     if( item.meta_box['session-time'] <= 0 || item.meta_box['session-duration'] <= 0 )
       return;
-
-    console.log('na', item.title.rendered);
 
     // Put item on the schedule
     let timeArray = item.meta_box['session-time'].split(':');

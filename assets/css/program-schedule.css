@@ -59,7 +59,7 @@
 .program-schedule-session:hover {
   opacity: 0.95;
   transition: opacity 0.5s;
-  border-bottom: solid 2px #666;
+  border-bottom: solid 2px #ccc;
   /*margin-top:6px;*/
   /*margin-left:1px;*/
 }

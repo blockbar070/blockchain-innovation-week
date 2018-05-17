@@ -51,12 +51,15 @@ var renderProgramItem = function(item) {
 }
 
 // Get posts
-fetch('https://blockbar.nl/wp-json/wp/v2/posts')
+fetch('https://blockbar.nl/wp-json/wp/v2/posts?per_page=100')
   .then(function(response) {
     return response.json();
   })
   .then(function(posts) {
-    R.map(renderProgramItem, posts)
+    const randomize = input => input.sort(() => Math.random() - 0.5);
+    posts = $.makeArray(posts)
+    R.map(renderProgramItem, randomize(posts
+      ))
   });
 
 /*
