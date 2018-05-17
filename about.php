@@ -12,7 +12,7 @@
                             <h1 class="white">About</h1>
                             <ul class="breadcrumb white">
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li>About us</li>
                             </ul>
@@ -82,7 +82,7 @@
                                         <p>
                                             <a href="https://twitter.com/blockbar070" target="_blank">Twitter</a> | 
                                             <a href="https://meetup.com/blockbar" target="_blank">Meetup</a> |
-                                            <a href="/biw/proggramme.php">Program</a> | 
+                                            <a href="/biw/programme.php">Program</a> | 
                                             <a href="/biw/tickets.php">Tickets</a>
                                         </p>
 
