@@ -82,8 +82,8 @@
                                         <p>
                                             <a href="https://twitter.com/blockbar070" target="_blank">Twitter</a> | 
                                             <a href="https://meetup.com/blockbar" target="_blank">Meetup</a> |
-                                            <a href="/biw/programme.php">Program</a> | 
-                                            <a href="/biw/tickets.php">Tickets</a>
+                                            <a href="/programme.php">Program</a> | 
+                                            <a href="/tickets.php">Tickets</a>
                                         </p>
 
                                     </p>

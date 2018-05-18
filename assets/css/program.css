@@ -13,7 +13,7 @@
 
 .projects-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   position: relative;
 }
@@ -43,6 +43,7 @@
   font-family: 'SourceSansPro Black', sans-serif;
   text-transform: uppercase;
   background: #e9eef4;
+  overflow:hidden;
   padding: 15px;
   box-sizing: border-box;
   width: 300px;
@@ -57,7 +58,7 @@
   position: absolute;
   left: 15px;
   bottom: 15px;
-  width: 200px;
+  width: 203px;
   line-height: 32px;
   color: #3345f1;
   font-weight: bold;

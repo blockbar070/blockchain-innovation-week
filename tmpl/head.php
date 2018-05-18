@@ -3,9 +3,8 @@ $is_home = strpos($_SERVER['SCRIPT_FILENAME'], '/index') > -1;
 $is_about_page = strpos($_SERVER['SCRIPT_FILENAME'], '/about') > -1;
 $is_tickets_page = strpos($_SERVER['SCRIPT_FILENAME'], '/tickets') > -1;
 $is_program_page = strpos($_SERVER['SCRIPT_FILENAME'], '/program-item') > -1 || strpos($_SERVER['SCRIPT_FILENAME'], '/programme') > -1;
+$baseUrl = strpos($_SERVER['REQUEST_URI'], '/blockchain-innovation-week') >= -1 ? '/blockchain-innovation-week/' : '/biw/';
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +12,7 @@ $is_program_page = strpos($_SERVER['SCRIPT_FILENAME'], '/program-item') > -1 || 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="<?php echo $baseUrl; ?>" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Blockbar | Open Blockchain Lab The Hague</title>
     <link rel="icon shortcut" href="assets/img/favicon-16x16.png" sizes="16x16" type="image/png">
@@ -91,25 +91,25 @@ $is_program_page = strpos($_SERVER['SCRIPT_FILENAME'], '/program-item') > -1 || 
                 <div class="menu-holder">
                     <ul>
                         <li>
-                            <a href="/biw/"
+                            <a href="./"
                                 class="<?php echo $is_home ? 'active-item' : ''; ?>">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="/biw/programme.php"
+                            <a href="./programme.php"
                                 class="<?php echo $is_program_page ? 'active-item' : ''; ?>">
                                 Programme
                             </a>
                         </li>
                         <li>
-                            <a href="/biw/tickets.php"
+                            <a href="./tickets.php"
                                 class="<?php echo $is_tickets_page ? 'active-item' : ''; ?>">
                                 Tickets
                             </a>
                         </li>
                         <li>
-                            <a href="/biw/about.php"
+                            <a href="./about.php"
                                 class="<?php echo $is_about_page ? 'active-item' : ''; ?>">
                                 About
                             </a>

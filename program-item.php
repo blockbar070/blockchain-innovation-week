@@ -41,7 +41,7 @@
                                             The content of this page.
                                         </div>
                                         <p hidden>
-                                            <a href="/biw/programme.php" class="btn-alt small active margin-null">See full program</a>
+                                            <a href="/programme.php" class="btn-alt small active margin-null">See full program</a>
                                         </p>
                                     </div>
                                 </div>

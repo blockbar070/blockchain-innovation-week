@@ -38,8 +38,9 @@ var renderProgramItem = function(item) {
   cornerExtraCSS = isWorkshop.length == 1 ? '' : cornerExtraCSS;
 
   cornerExtraCSS += Math.floor(Math.random()*(7+1)) == 1 ? 'opacity: 1;' : ''
+
   $projectItems.append('\
-    <div class="session '+getTagsClasses(item)+'" onClick="javascript:document.location=\'./lineup/'+item.slug+'\'">\
+    <div class="session '+getTagsClasses(item)+'" onClick="javascript:document.location=\'/biw/lineup/'+item.slug+'\'">\
       <img class="session-corner" src="assets/img/'+cornerImg+'" style="'+cornerPositionY+': 0; '+cornerPositionX+': 0; '+cornerExtraCSS+'" />\
       <div class="session-title">\
         '+item.title.rendered+'\
@@ -58,8 +59,7 @@ fetch('https://blockbar.nl/wp-json/wp/v2/posts?per_page=100')
   .then(function(posts) {
     const randomize = input => input.sort(() => Math.random() - 0.5);
     posts = $.makeArray(posts)
-    R.map(renderProgramItem, randomize(posts
-      ))
+    R.map(renderProgramItem, randomize(posts))
   });
 
 /*

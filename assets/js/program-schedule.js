@@ -89,7 +89,7 @@ ProjectItemSchedule = {
     let $timelineRow = $('.program-schedule-hours.'+day+'.area-'+item.meta_box['session-area']);
 
     $timelineRow.append('\
-      <div title="'+item.title.rendered+'" data-id="'+item.id+'" data-time="'+item.meta_box['session-time']+'" class="program-schedule-session '+getTagsClasses(item)+'" onClick="javascript:document.location=\'./lineup/'+item.slug+'\'">\
+      <div title="'+item.title.rendered+'" data-id="'+item.id+'" data-time="'+item.meta_box['session-time']+'" class="program-schedule-session '+getTagsClasses(item)+'" onClick="javascript:document.location=\'/biw/lineup/'+item.slug+'\'">\
         <div class="program-schedule-session-title">\
           '+item.title.rendered+'\
           <div class="program-schedule-session-author">'+item.meta_box['session-author']+'</div>\
