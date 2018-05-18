@@ -120,13 +120,13 @@ $baseUrl = strpos($_SERVER['REQUEST_URI'], '/blockchain-innovation-week') >= -1 
             </div>
             <!--  END Classic menu, responsive menu classic  -->
             <!--  Button for Responsive Menu Classic  -->
-            <div id="menu-responsive-classic">
+<!--             <div id="menu-responsive-classic">
                 <div class="menu-button">
                     <span class="bar bar-1"></span>
                     <span class="bar bar-2"></span>
                     <span class="bar bar-3"></span>
                 </div>
-            </div>
+            </div> -->
             <!--  END Button for Responsive Menu Classic  -->
             <div class="secondary-menu-mobile">
                 <ul>

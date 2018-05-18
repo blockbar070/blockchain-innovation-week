@@ -100,3 +100,26 @@ content: "\2014 \2009";
     margin-right: -10px;
   }
 }
+
+/** Main nav on mobile */
+
+@media screen and (max-width: 991px) {
+  header nav.navbar {
+    padding: 0 10px;
+  }
+  #menu-classic .menu-holder {
+    display: block !important;
+    float: none !important;
+    margin: 0;
+    margin-top: 5px;
+  }  
+  #menu-classic .menu-holder ul{
+    display: flex !important;
+    justify-content: space-around;
+  }
+  header nav.navbar #menu-classic .menu-holder ul li a {
+    margin-right:0;
+    margin-top: 10px;
+    padding: 10px 0 2px 0;
+  }
+}
