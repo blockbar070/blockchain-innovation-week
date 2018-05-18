@@ -119,6 +119,7 @@
     <script src="assets/js/imagesloaded.min.js"></script>
     <script src="assets/js/pace.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/honeycomb.js"></script>
 
 </body>
 

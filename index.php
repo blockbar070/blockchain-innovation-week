@@ -31,11 +31,7 @@
                         </div>
 
                         <div class="col-md-6 padding-leftright-null">
-                            <div class="section-image">
-                                <picture class="">
-                                    <img src="https://c1.staticflickr.com/1/852/26785490577_e4ecd65dcc_c.jpg" class="img-responsive" alt="">
-                                </picture>
-                            </div>
+                            <?php include 'tmpl/honeycomb.php'; ?>
                         </div>
                     </div>
                     <!-- END Section Image -->

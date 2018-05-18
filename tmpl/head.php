@@ -28,6 +28,7 @@ $baseUrl = strpos($_SERVER['REQUEST_URI'], '/blockchain-innovation-week') >= -1 
     <link rel="stylesheet" href="assets/css/main.css?1">
     <link rel="stylesheet" href="assets/css/program.css?1">
     <link rel="stylesheet" href="assets/css/program-schedule.css?1">
+    <link rel="stylesheet" href="assets/css/honeycomb.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
