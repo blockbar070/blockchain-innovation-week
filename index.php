@@ -26,6 +26,16 @@
                                       The first edition of Blockchain Innovation Week will take place on the <b>24th and 25th of May 2018</b>, The Hague’s first two-day event where blockchain developers share the <b>newest insights</b> in blockchain technologies.
                                     </p>
                                     <a href="./about.php" class="btn-pro">Read More</a>
+                                    <br><br><hr><br>
+                                    <p>
+                                      We thank our sponsors:
+                                    </p>
+                                    <p>
+                                      &raquo; <a href="https://espeoblockchain.com/" target="_blank">Espeo Blockchain</a><br>
+                                      &raquo; <a href="https://impactcity.nl/" target="_blank">Impact City</a><br>
+                                      &raquo; <a href="https://cryptopepes.io/" target="_blank">CryptoPepes</a><br>
+                                      &raquo; <a href="https://www.thehaguetech.com/" target="_blank">The Hague Tech</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
