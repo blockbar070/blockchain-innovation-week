@@ -19,10 +19,6 @@
 
                 <br />
 
-                <p align="center">
-                    <i>The following times are not final. Program will be updated in the following days.</i>
-                </p>
-
                 <!-- Here the program schedule is loaded by JavaScript (program-schedule.js) -->
                 <div id="program-schedule"></div>
 

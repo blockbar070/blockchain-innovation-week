@@ -1,3 +1,8 @@
+/* Fix unneeded css in style.css */
+#page-header {
+  margin-top: 0;
+}
+
 /* Buy tickets banner on Home */
 .buy-tickets-banner {
   margin: 30px 0 30px 0;
@@ -119,7 +124,7 @@ content: "\2014 \2009";
   }
   header nav.navbar #menu-classic .menu-holder ul li a {
     margin-right:0;
-    margin-top: 10px;
-    padding: 10px 0 2px 0;
+    /*margin-top: 10px;*/
+    /*padding: 10px 0 2px 0;*/
   }
 }
