@@ -60,7 +60,7 @@ ProjectItemSchedule = {
     R.map(ProjectItemSchedule.renderItemInSchedule, allItems);
     // Add area names
     $('[data-area]').each(function() {
-      $(this).prepend('<div class="program-schedule-area">'+$(this).data('area')+'</div>');
+      $(this).prepend('<div class="program-schedule-area">'+$(this).data('area')+' Space</div>');
     });
   },
 
