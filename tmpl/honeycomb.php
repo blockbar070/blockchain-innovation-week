@@ -111,6 +111,23 @@ $logos[] = [
   ]
 ];
 
+$logos[] = [
+  'name' => 'rabobank',
+  'title' => 'Rabobank',
+  'urls' => [
+    './lineup/public-blockchain-technology-generations-their-challenges-and-solutions',
+    './lineup/ethereum-in-an-enterprise-context-quorum'
+  ]
+];
+
+$logos[] = [
+  'name' => 'ing',
+  'title' => 'ING',
+  'urls' => [
+    './lineup/how-to-preserve-privacy-on-a-blockchain'
+  ]
+];
+
 function getAllLogos($logos) {
   // Randomize logos
   shuffle($logos);
