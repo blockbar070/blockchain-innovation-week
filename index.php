@@ -37,6 +37,9 @@
                                       &raquo; <a href="https://www.thehaguetech.com/" target="_blank">The Hague Tech</a><br>
                                       &raquo; <a href="https://www.meetup.com/blockbar/" target="_blank">The Blockbar community</a>
                                     </p>
+                                    <p>
+                                      This event is organized in collaboration with <a href="http://ethereum.nl" target="_blank">ETH DEV NL</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
