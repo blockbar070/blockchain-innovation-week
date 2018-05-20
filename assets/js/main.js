@@ -23,6 +23,10 @@ var $ = jQuery.noConflict();
     Pace.on("done", function(){
         $("#myloader").fadeOut(800);
     });
+    // Always fadeout after 0.2 seconds 
+    setTimeout(function() {
+        $("#myloader").fadeOut(800);
+    }, 200);
     /*-------------------------------------------------*/
     /* =  Menu
     /*-------------------------------------------------*/
