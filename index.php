@@ -20,12 +20,23 @@
                     <div class="row no-margin">
                         <div class="col-md-6 padding-leftright-null">
                             <div data-responsive="parent-height" data-responsive-id="about" class="text">
-                                <h2 class="margin-bottom-null left">About The Event</h2>
+                                <h2 class="margin-bottom-null left">Blockchain Innovation Week, The Hague</h2>
                                 <div class="padding-onlytop-sm">
-                                    <p class="margin-bottom">
-                                      The first edition of Blockchain Innovation Week will take place on the <b>24th and 25th of May 2018</b>, The Hague’s first two-day event where blockchain developers share the <b>newest insights</b> in blockchain technologies.
+                                    <p>
+                                        This week will be a special one.
                                     </p>
-                                    <a href="./about.php" class="btn-pro">Read More</a>
+
+                                    <p>
+                                        In the week of the <a href="https://www.coindesk.com/bitcoin-pizza-day-celebrating-pizza-bought-10000-btc/" target="_blank">first pizza bought with Bitcoin</a> we organize two full days on which experts share the <b>newest developments and insights</b> in blockchain technologies.
+                                    </p>
+
+                                    <p class="margin-bottom">
+                                        Come and learn about the newest blockchain tech, business cases, using a hardware wallet and examples of blockchain apps running in real life. <b>24th and 25th of May 2018</b>.
+                                    </p>
+                                    <div style="display: flex; justify-content: flex-left;">
+                                        <a href="./about.php" class="btn-pro">Read More</a>
+                                        <a href="./tickets.php" class="btn-pro" style="margin-left: 50px;">Buy Tickets</a>
+                                    </div>
                                     <br><br><hr><br>
                                     <p>
                                       We thank our sponsors:
