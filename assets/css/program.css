@@ -1,12 +1,21 @@
 @font-face {
-  font-family: 'SourceSansPro Bold';
-  src: url('fonts/SourceSansPro-Bold.otf');
+  font-family: 'brandon_grotesque_regular';
+  src: url('../fonts/Brandon Grotesque/brandon_reg-webfont.woff2') format('woff2'),
+       url('../fonts/Brandon Grotesque/brandon_reg-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'SourceSansPro Black';
-  src: url('fonts/SourceSansPro-Black.otf');
+  font-family: 'brandon_grotesquemedium';
+  src: url('../fonts/Brandon Grotesque/brandon_med-webfont.woff2') format('woff2'),
+       url('../fonts/Brandon Grotesque/brandon_med-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'brandon_grotesquebold';
+  src: url('../fonts/Brandon Grotesque/brandon_bld-webfont.woff2') format('woff2'),
+       url('../fonts/Brandon Grotesque/brandon_bld-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -40,9 +49,11 @@
 }
 
 .session {
-  font-family: 'SourceSansPro Black', sans-serif;
-  text-transform: uppercase;
   background: #e9eef4;
+  /*background: center center no-repeat url('../img/example-session.jpg');*/
+  /*background-size: cover;*/
+  font-family: 'brandon_grotesquebold', sans-serif;
+  text-transform: uppercase;
   overflow:hidden;
   padding: 15px;
   box-sizing: border-box;
@@ -53,25 +64,29 @@
   cursor:pointer;
 }
 .session-title {
-  font-size: 24px;
+  font-size: 26px;
   letter-spacing: 1px;
   position: absolute;
   left: 15px;
-  bottom: 15px;
+  bottom: 12px;
   width: 203px;
+  width: 256px
   line-height: 32px;
   color: #3345f1;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 .session-date {
   margin-top:10px;
-  font-size: 0.67em;;
+  letter-spacing: 0.6px;
+  font-size: 0.67em;
   color: #000;
-  line-height: 1.25em;;
+  line-height: 1.25em;
+  
 }
 .session-author {
-  font-size: 0.67em;;
-  line-height: 1.25em;;
+  letter-spacing: 0.6px;
+  font-size: 0.67em;
+  line-height: 1.25em;
 }
 .session-corner {
   opacity:0;
