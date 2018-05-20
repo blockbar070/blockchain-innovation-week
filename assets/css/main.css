@@ -1,3 +1,38 @@
+img {
+  max-width: 100%;
+}
+.partner-logos {
+  text-align: left;
+  margin-bottom: 120px;
+  margin-left: 50px;
+}
+.partner-logos  a {
+  display: inline-block;
+}
+.partner-logos p {
+  display: inline-block;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.partner-logos img {
+  width: 260px;
+  max-width: 100%;
+  display: inline-block;
+}
+@media (min-width: 992px) {
+  .partner-logos {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .partner-logos p {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
 /* Fix unneeded css in style.css */
 #page-header {
   margin-top: 0;
