@@ -49,6 +49,7 @@
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+.honeycomb .item:active::before,
 .honeycomb .item:hover::before {
   -webkit-transform: scale(1.154);
   transform: scale(1.154);
@@ -183,6 +184,59 @@
     }
   }
 
+  /* If it's mobile portrait */
+  @media (max-width: 320px) {
+    .honeycomb {
+      transform: scale(0.5) !important;
+      margin-top: -12.5em !important;
+      margin-left: -53px !important;
+    }
+  }
+  @media (max-width: 375px) {
+    .honeycomb {
+      transform: scale(0.6) !important;
+      margin-top: -14em !important;
+      margin-left: -38px !important;
+    }
+  }
+  @media (max-width: 511px) {
+    .honeycomb  {
+      max-width: 15rem;
+      grid-template-columns: repeat(4, 5rem);
+      width: 475px;
+      transform: scale(0.7);
+      display: grid;
+      width: 28em;
+      margin: 0 auto;
+      margin-bottom: -1.4rem;
+      padding: 1rem 0 2.4rem;
+      margin-top: -10em;
+      width: auto;
+      max-width: 9999px;
+      margin-left: -20px;
+    }
+    .honeycomb .item:nth-child(even) {
+      grid-column: 2;
+      margin: 0;
+      margin-bottom: -1.4rem;
+    }
+    .honeycomb .item:nth-child(5n+1) {
+      grid-column: 1
+    }
+    .honeycomb .item:nth-child(5n+2) {
+      grid-column: 3
+    }
+    .honeycomb .item:nth-child(5n+3) {
+      grid-column: 5
+    }
+    .honeycomb .item:nth-child(5n+4) {
+      grid-column: 2
+    }
+    .honeycomb .item:nth-child(5n+0) {
+      grid-column: 4
+    }
+  }
+
   /* If it's half width */
   @media (min-width: 992px) {
     .honeycomb .item:nth-child(5n+1) {
@@ -225,12 +279,4 @@
     }
   }
 
-}
-
-.show-on-mobile { display: grid; }
-.hide-on-mobile { display: none; }
-
-@media (min-width: 680px) {
-  .show-on-mobile { display: none; }
-  .hide-on-mobile { display: grid; }
 }

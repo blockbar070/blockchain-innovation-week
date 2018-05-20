@@ -1,14 +1,5 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-?>
-<img src="https://c1.staticflickr.com/1/852/26785490577_e4ecd65dcc_c.jpg" class="img-responsive show-on-mobile">
-
-<?php
-
 $logos = [];
 
 $logos[] = [
@@ -131,6 +122,8 @@ $logos[] = [
 function getAllLogos($logos) {
   // Randomize logos
   shuffle($logos);
+  // Cut the last logo of
+  array_splice($logos, -1);
   // Show all items
   foreach ($logos as $key => $logo) {
     $randomUrl = $logo['urls'][rand(0, sizeof($logo['urls'])-1)];
@@ -147,6 +140,6 @@ function getAllLogos($logos) {
 }
 
 ?>
-<ul class="honeycomb hide-on-mobile">
+<ul class="honeycomb">
   <?php getAllLogos($logos); ?>
 </ul>
