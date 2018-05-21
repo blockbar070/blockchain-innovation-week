@@ -1,5 +1,7 @@
 var $title = $('#page-header .text h1');
 var $schedule = $('#program-schedule');
+var myStorage = window.localStorage;
+
 var config = {
   // schedule start time(HH:ii)
   startTime: 16,
@@ -9,6 +11,30 @@ var config = {
   widthTimeX: 60,
   // slotHeight
   heightTimeY: 90
+}
+
+var storageAvailable = function(type) {
+  try {
+    var storage = window[type],
+        x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  }
+  catch(e) {
+    return e instanceof DOMException && (
+      // everything except Firefox
+      e.code === 22 ||
+      // Firefox
+      e.code === 1014 ||
+      // test name field too, because code might not be present
+      // everything except Firefox
+      e.name === 'QuotaExceededError' ||
+      // Firefox
+      e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+      // acknowledge QuotaExceededError only if there's something already stored
+      storage.length !== 0;
+  }
 }
 
 var capitalizeFirstLetter = function(string) {
@@ -37,6 +63,19 @@ ProjectItemSchedule = {
       $schedule.find('.day-'+day).append('<div data-area="'+area+'" class="program-schedule-hours '+day+' area-'+area+'" style="display:block;height:'+config.heightTimeY+'px;"></div>');
     })
 
+  },
+
+  isFav: function(item) {
+    if ( ! storageAvailable('localStorage'))
+      return false;
+
+    // Get current favs
+    var favs = myStorage.getItem('favs');
+    if(! favs) favs = '';
+
+    // Check if fav is already there
+    var stringToFind = 'fav-' + item.id + ',';
+    return (favs.indexOf(stringToFind) > -1);
   },
 
   renderHours: function(day, allItems) {
@@ -89,7 +128,8 @@ ProjectItemSchedule = {
     let $timelineRow = $('.program-schedule-hours.'+day+'.area-'+item.meta_box['session-area']);
 
     $timelineRow.append('\
-      <div data-id="'+item.id+'" data-time="'+item.meta_box['session-time']+'" class="program-schedule-session '+getTagsClasses(item)+'" onClick="javascript:document.location=\'/biw/lineup/'+item.slug+'\'">\
+      <div data-id="'+item.id+'" data-time="'+item.meta_box['session-time']+'" \
+        class="program-schedule-session '+getTagsClasses(item)+' '+(ProjectItemSchedule.isFav(item) ? 'is-fav' : '')+'" onClick="javascript:document.location=\'/biw/lineup/'+item.slug+'\'">\
         <div class="overflow-hidden">\
           <div class="program-schedule-session-title">\
             '+item.title.rendered+'\

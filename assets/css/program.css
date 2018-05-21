@@ -150,14 +150,33 @@
 /*  -webkit-clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
   clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);*/
 }
-.circle-icon.tag-bitcoin { background-image: url(https://bitcoin.org/img/icons/opengraph.png); }
-.circle-icon.tag-ethereum { background-image: url("https://s2.coinmarketcap.com/static/img/coins/200x200/1027.png"); }
-.circle-icon.tag-trezor { background-image: url("https://cdn-images-1.medium.com/max/1200/1*Sek00YxqMdOJp5FsjveZiQ.png"); }
-.circle-icon.tag-rchain { background-image: url("https://cdn-images-1.medium.com/max/750/1*FpgVSDZhaetZ63QQ7Ry0CA.png"); }
-.circle-icon.tag-steemit { background-image: url("https://i0.wp.com/vertigion.com/wp-content/uploads/2017/06/steem-logo1.png?fit=250%2C250&ssl=1"); }
-.circle-icon.tag-ING { background-image: url("https://media.cdn.gradconnection.com/uploads/986ccb02-cc68-4d05-a3e6-ee80683d33f6-ING_-_logo_.png"); }
-.circle-icon.tag-rabobank { background-image: url("https://www.deleidscheflesch.nl/assets/uploads/2016/04/rabobank.png"); }
-.circle-icon.tag-dtube { background-image: url("https://avatars1.githubusercontent.com/u/32245859?s=280&v=4"); }
-.circle-icon.tag-eos { background-image: url("https://s2.coinmarketcap.com/static/img/coins/200x200/1765.png"); }
-.circle-icon.tag-komodo { background-image: url("https://assets.coingecko.com/coins/images/611/large/komodo.png?1510040229"); }
-.circle-icon.tag-mars { background-image: url("https://buzzaldrinspaceinstitute.com/wp-content/uploads/2016/10/Mars_Cutout.png"); }
+.circle-icon.tag-bitcoin { background-image: url(../img/circle-icon/bitcoin.png); }
+.circle-icon.tag-ethereum { background-image: url("../img/circle-icon/ethereum.png"); }
+.circle-icon.tag-trezor { background-image: url("../img/circle-icon/trezor.png"); }
+.circle-icon.tag-rchain { background-image: url("../img/circle-icon/rchain.png"); }
+.circle-icon.tag-steemit { background-image: url("../img/circle-icon/steemit.png"); }
+.circle-icon.tag-ING { background-image: url("../img/circle-icon/ing.png"); }
+.circle-icon.tag-rabobank { background-image: url("../img/circle-icon/rabobank.png"); }
+.circle-icon.tag-dtube { background-image: url("../img/circle-icon/dtube.png"); }
+.circle-icon.tag-eos { background-image: url("../img/circle-icon/eos.png"); }
+.circle-icon.tag-komodo { background-image: url("../img/circle-icon/komodo.png"); }
+.circle-icon.tag-mars { background-image: url("../img/circle-icon/mars.png"); }
+
+/* Fav */
+
+.toggle-fav {
+  background: center center no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-left: 14px;
+  position: relative;
+  top: 3px;
+  background-image: url("https://cdn2.iconfinder.com/data/icons/icojoy/shadow/standart/gif/24x24/001_17.gif");
+  display: inline-block;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+.toggle-fav.is-fav {
+  background-image: url("https://cdn2.iconfinder.com/data/icons/icojoy/noshadow/standart/png/24x24/001_15.png");
+}

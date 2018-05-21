@@ -63,15 +63,9 @@
   opacity: 0.95;
   border-bottom: solid 2px #ccc;
   transition: all 0.4s;
-
-/*
-  box-shadow:
-          8px 8px #53a7ea,
-          16px 16px #53a7ea,
-          24px 24px #53a7ea;
-  -webkit-transform: translateX(-36px);
-  transform: translateX(-36px);
-  z-index: 10; */
+}
+.program-schedule-session.is-fav {
+  background: #f5f509 !important;
 }
 .program-schedule-session-title {
   font-size: 12px;
@@ -84,8 +78,10 @@
 }
 .program-schedule-session-author {
   margin-top:3px;
-  font-size: 0.67em;
-  line-height: 1.25em;
+  /*font-size: 0.67em;*/
+  font-size: 0.72em;
+  /*line-height: 1.25em;*/
+  line-height: 1.30em;
   transition: all 0.4s;
 }
 .program-schedule-session:hover .program-schedule-session-author {
@@ -100,6 +96,10 @@
 .program-schedule-session.tag-workshop .program-schedule-session-title,
 .program-schedule-session.tag-workshop .program-schedule-session-author {
   color: #fff;
+}
+.program-schedule-session.tag-workshop.is-fav .program-schedule-session-title,
+.program-schedule-session.tag-workshop.is-fav .program-schedule-session-author {
+  color: #000 !important;
 }
 .program-schedule-session.tag-workshop:hover .program-schedule-session-author {
   color: #ff0;
@@ -122,5 +122,5 @@
   position: absolute;
   display: block;
   opacity: 1;
-  transition: opacity 0.2s 0.4s;
+  transition: opacity 0.1s 0.3s;
 }
