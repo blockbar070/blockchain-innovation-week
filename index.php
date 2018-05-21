@@ -18,7 +18,7 @@
                 <div class="container">
                     <!-- Section Image -->
                     <div class="row no-margin">
-                        <div class="col-md-6 padding-leftright-null">
+                        <div class="col-md-6 padding-leftright-null" style="position:relative;z-index:10;">
                             <div data-responsive="parent-height" data-responsive-id="about" class="text">
                                 <h2 class="margin-bottom-null left">Blockchain Innovation Week, The Hague</h2>
                                 <div class="padding-onlytop-sm">

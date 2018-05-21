@@ -20,6 +20,12 @@
   font-style: normal;
 }
 
+/* Filters */
+
+#page-content #projects ul.filters li {
+  padding: 0 15px;
+}
+
 .projects-items {
   display: flex;
   justify-content: flex-start;
@@ -70,7 +76,7 @@
   left: 15px;
   bottom: 12px;
   width: 203px;
-  width: 256px
+  width: 256px;`
   line-height: 32px;
   color: #3345f1;
   /*font-weight: bold;*/
@@ -109,4 +115,14 @@
 }
 .session.tag-workshop .session-date {
   color: #000;
+}
+
+/* Lists on the Details page */
+.le-content ul,
+.le-content ol {
+  list-style: disc;
+  margin-left: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
 }

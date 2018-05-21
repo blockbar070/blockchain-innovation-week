@@ -44,7 +44,7 @@
 
                                 <p>
                                     <br />
-                                    <a class="btn" href="https://events.guts.tickets/events/104" style="font-size:20px;margin-left:0;margin-bottom:0" target="_blank"><b>Reserve your tickets</b></a>
+                                    <a class="btn" href="https://events.guts.tickets/events/104" style="font-size:20px;margin-left:0;margin-bottom:0" target="_blank"><b>Buy your tickets</b></a>
                                 </p>
 
                                 <p>
@@ -57,22 +57,22 @@
 
                             <h3>Passe-partout</h3>
                             <p>
-                                Access to the full event<br>
+                                Access to the full event: 18&euro;<br>
                             </p>
 
                             <h3>Donderdag ticket</h3>
                             <p>
-                                Access to all Thursday sessions<br>
+                                Access to all Thursday sessions:10&euro;<br>
                             </p>
                             
                             <h3>Vrijdag ticket</h3>
                             <p>
-                                Access to all Friday sessions<br>
+                                Access to all Friday sessions: 10&euro;<br>
                             </p>
 
                             <h3>Business Ticket</h3>
                             <p style="max-width: 300px">
-                                Support this event with a Business Ticket. You'll get access to all sessions, and dinner is included on both days.
+                                Support this event with a Business Ticket. You'll get access to all sessions, and dinner is included on both days: 43&euro;
                             </p>
 
                         </div>

@@ -8,8 +8,9 @@
                 <div class="filter-wrap">
                     <ul class="col-md-12 filters padding-leftright-null">
                         <li data-filter="*" class="is-checked">All</li>
-                        <li data-filter="tech">Technology</li>
+                        <li data-filter="tech">Tech</li>
                         <li data-filter="business">Business</li>
+                        <li data-filter="beginner">Beginner</li>
                         <li data-filter="ngo">NGO</li>
                         <li data-filter="game">Game</li>
                         <li></li>

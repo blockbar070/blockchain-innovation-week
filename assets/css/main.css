@@ -61,13 +61,13 @@ img {
 }
 .buy-tickets-banner .text:before,
 #page-header.background-move-effect .text:before {
-  transition: background 1s;
+  transition: background 1.9s;
   background-position: 80% 100px;
 }
 .buy-tickets-banner:hover .text:before,
 #page-header.background-move-effect:hover .text:before {
   background-position: 100% 0;
-  transition: background 0.8s;
+  transition: background 6s;
 }
 .buy-tickets-banner .white {
   color: #000 !important;
