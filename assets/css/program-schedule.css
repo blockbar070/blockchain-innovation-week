@@ -2,7 +2,7 @@
   max-width: 95%;
   overflow-x: auto;
   overflow-y: hidden;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   margin: 0 auto;
 }
 .day-title {
@@ -56,11 +56,13 @@
   cursor:pointer;
   overflow:hidden;
   transition: opacity 2s;
+  border-bottom: solid 2px transparent;
+  transition: all 0.4s;
 }
 .program-schedule-session:hover {
   opacity: 0.95;
-  transition: opacity 0.5s;
   border-bottom: solid 2px #ccc;
+  transition: all 0.4s;
 
 /*
   box-shadow:
@@ -84,9 +86,11 @@
   margin-top:3px;
   font-size: 0.67em;
   line-height: 1.25em;
+  transition: all 0.4s;
 }
 .program-schedule-session:hover .program-schedule-session-author {
   color: #000;
+  transition: all 0.4s;
 }
 
 /* Session that is a workshop */
@@ -99,4 +103,24 @@
 }
 .program-schedule-session.tag-workshop:hover .program-schedule-session-author {
   color: #ff0;
+  transition: all 0.4s;
+}
+
+#program-schedule .program-schedule-session {
+  overflow: visible;
+}
+#program-schedule .program-schedule-session .circle-icon {
+  bottom: -13px;
+  right: -13px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+#program-schedule .program-schedule-session:hover {
+  z-index: 10;
+}
+#program-schedule .program-schedule-session:hover .circle-icon {
+  position: absolute;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.2s 0.4s;
 }
