@@ -42,11 +42,14 @@ var renderProgramItem = function(item) {
   $projectItems.append('\
     <div class="session '+getTagsClasses(item)+'" onClick="javascript:document.location=\'/biw/lineup/'+item.slug+'\'">\
       <img class="session-corner" src="assets/img/'+cornerImg+'" style="'+cornerPositionY+': 0; '+cornerPositionX+': 0; '+cornerExtraCSS+'" />\
-      <div class="session-title">\
-        '+item.title.rendered+'\
-        <div class="session-date">'+dateString+'</div>\
-        <div class="session-author">'+item.meta_box['session-author']+'</div>\
+      <div class="overflow-hidden">\
+        <div class="session-title">\
+          '+item.title.rendered+'\
+          <div class="session-date">'+dateString+'</div>\
+          <div class="session-author">'+item.meta_box['session-author']+'</div>\
+        </div>\
       </div>\
+      <div class="circle-icon '+getTagsClasses(item)+'"></div>\
     </div>\
   ');
 }
