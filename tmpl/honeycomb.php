@@ -119,6 +119,16 @@ $logos[] = [
   ]
 ];
 
+$logos[] = [
+  'name' => 'pii',
+  'title' => 'Peace Innovation Institute',
+  'urls' => [
+    './lineup/peace-innovation-lab',
+    './lineup/what-implemented-impact-looks-like-meet-the-doers',
+    './lineup/collaborative-open-innovation-in-science-with-knowledge-knockon-effects'
+  ]
+];
+
 function getAllLogos($logos) {
   // Randomize logos
   shuffle($logos);
